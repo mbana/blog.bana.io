@@ -1,0 +1,150 @@
+/* https://imfing.github.io/hextra/docs/advanced/customization/ */
+/* https://fontsource.org */
+
+/* @font-face {
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff2) format('woff2'),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff) format('woff'),
+       url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.ttf) format('truetype');
+}
+
+.content code:not(.code-block code) {
+  font-family: "Iosevka", monospace;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Zilla Slab", sans-serif;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Not working */
+  font-feature-settings: "onum";
+}
+
+.content {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  /* Not working */
+  font-feature-settings: "onum";
+}
+
+.content code:not(.code-block code) {
+  /* color: #c97c2e; */
+  font-family: "Iosevka Charon Mono", "Iosevka Charon", "Iosevka", monospace;
+}
+
+/* .content p:first-of-type::first-letter {
+  initial-letter: 7;
+  -webkit-initial-letter: 7;
+} */
+
+/* Drop caps using CSS. */
+@supports not ((initial-letter:2) or (-webkit-initial-letter:2)) {
+  .content>p:first-of-type:first-letter {
+    /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
+    color: var(--hx-color-primary-600);
+    letter-spacing: 0;
+    float: left;
+    margin-top: .06em;
+    margin-right: 1rem;
+    /* font-family: inherit; */
+    font-size: 6.5rem;
+    font-weight: 700;
+    line-height: .8;
+  }
+
+  @media (max-width: 768px) {
+    .content>p:first-of-type:first-letter {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@supports (initial-letter:2) or (-webkit-initial-letter:2) {
+  .content>p:first-of-type:first-letter {
+    /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
+    color: var(--hx-color-primary-600);
+    /* letter-spacing: 0; */
+    -webkit-initial-letter: 3 2;
+    initial-letter: 3 2;
+    margin-right: 0.2rem;
+    /* border: 1px solid black; */
+    /* font-family: inherit; */
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .content>p:first-of-type:first-letter {
+      -webkit-initial-letter: 2;
+      initial-letter: 2;
+    }
+  }
+}
+
+/* // https://vuepress.vuejs.org/config/#palette-styl
+// More examples: https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl
+
+// colors
+$accentColor =#E53935 $textColor =#000000 $borderColor =#E53935 $codeBgColor =#282c34 // https://vuepress.vuejs.org/plugin/official/plugin-nprogress.html
+$nprogressColor =#E53935;
+// https://vuepress.vuejs.org/plugin/official/plugin-search.html
+$arrowBgColor =#E53935;
+
+
+// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+// https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=6002ee
+
+// Red 50
+// #FFEBEE
+// 100
+// #FFCDD2
+// 200
+// #EF9A9A
+// 300
+// #E57373
+// 400
+// #EF5350
+// 500
+// #F44336
+// 600
+// #E53935
+// 700
+// #D32F2F
+// 800
+// #C62828
+// 900
+// #B71C1C
+// A100
+// #FF8A80
+// A200
+// #FF5252
+// A400
+// #FF1744
+// A700
+// #D50000 */
+
+:root {
+  /* https: //www.colorhexa.com/e53935 */
+  --primary-hue: 1.4deg;
+  --primary-saturation: 77.2%;
+  --primary-lightness: 55.3%;
+}
+
+/* @layer theme {
+  :root {
+    --hx-default-mono-font-family: "JetBrains Mono", monospace;
+  }
+} */

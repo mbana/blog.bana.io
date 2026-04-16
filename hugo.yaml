@@ -1,0 +1,120 @@
+baseURL: https://blog.bana.io
+languageCode: en-GB
+title: Kubernetes, Linux, Golang and other things
+module:
+  hugoVersion:
+    extended: true
+  imports:
+    - path: github.com/imfing/hextra
+
+enableRobotsTXT: true
+enableGitInfo: true
+enableEmoji: true
+enableSyntaxHighlighting: true
+enableInlineShortcodes: true
+
+permalinks:
+  posts: /:title/
+  blog: /:title/
+
+menu:
+  main:
+    - name: Posts
+      pageRef: /posts
+      weight: 1
+    - name: Archives
+      pageRef: /archives
+      weight: 2
+    - name: Tags
+      pageRef: /tags
+      weight: 3
+    - name: Glossary
+      pageRef: /glossary
+      weight: 4
+    - name: Who I Follow
+      pageRef: /who-i-follow
+      weight: 5
+    - name: About
+      pageRef: /about
+      weight: 6
+    - name: Search
+      weight: 7
+      params:
+        type: search
+    - name: RSS Feed
+      weight: 8
+      pageRef: /index.xml
+      params:
+        icon: rss
+    # - identifier: github
+    #   name: GitHub
+    #   weight: 5
+    #   url: "https://github.com/imfing/hextra"
+    #   params:
+    #     icon: github
+
+params:
+  # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "1st of January, 2006"
+  # Display the author of the last modification
+  displayUpdatedAuthor: true
+  blog:
+    list:
+      displayTags: false
+      pagerSize: 64
+  toc:
+    displayTags: true
+  archives:
+    section: posts
+    dateFormat: "1st January"
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    # width: wide
+    logo:
+      path: images/logo-light.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 64
+      height: 64
+  # page:
+  #   # full (100%), wide (90rem), normal (1280px)
+  #   width: normal
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+  analytics:
+    umami:
+      serverURL: "https://blog.bana.io"
+      websiteID: "b5c13ef7-7e8e-4f1f-b7bf-eb2a0c91b19d"
+  imageZoom:
+    enable: true
+  externalLinkDecoration: true
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
+
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
