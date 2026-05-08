@@ -101,6 +101,14 @@ params:
   imageZoom:
     enable: true
   externalLinkDecoration: true
+  comments:
+    enable: true
+    type: giscus
+    giscus:
+      repo: mbana/blog.bana.io
+      repoId: R_kgDOSDSHqA
+      category: General
+      categoryId: DIC_kwDOSDSHqM4C8k4b
 
 markup:
   highlight:
