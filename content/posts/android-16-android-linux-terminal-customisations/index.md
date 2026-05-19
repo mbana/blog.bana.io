@@ -110,8 +110,15 @@ I have a huge lists of TODOs so I can't document everything I've found so far bu
 1. Without a rooted phone how does one go about debugging issues?
 2. Sometime the VM randomly terminates in a middle of a, I think, a command that consumes a lot of IO.
 3. Without using Tailscale, or a similar technology, I cannot directly SSH into the VM from within the same network. I can obviously ping the VM from the host Android phone from within Termux without a problem. I don't want to have to setup an additional piece of software just to forward to the guest VM, that's rather annoying.
+4. Why didn't they just reuse the Termux interface? The one being shipped in the version of Android I have, 16, is rather clunky. The keyboard for instance seems to randomly break and not respond to any keypresses.
+5. The default VM size is rather low which is understandable given the usecases intended for AVF. I would have liked an option in the UI to select a different sized VM altogether without having to manually constantly switch to the size I want, I do know that on a rooted device this is much easier to configure.
 
 Again, I would love to hear back from people using this and how they've overcome the issues they are facing.
 
-Thanks for reading,
-\- Bana
+## References
+
+Some of the more interesting things I found are listed below:
+
+1. <https://github.com/polygraphene/gunyah-on-sd-guide>.
+2. <https://github.com/nix-community/nixos-avf>.
+3. <https://github.com/nix-community/nixos-avf-image-app>.
