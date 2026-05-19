@@ -122,3 +122,5 @@ Some of the more interesting things I found are listed below:
 1. <https://github.com/polygraphene/gunyah-on-sd-guide>.
 2. <https://github.com/nix-community/nixos-avf>.
 3. <https://github.com/nix-community/nixos-avf-image-app>.
+4. <https://github.com/GrapheneOS/platform_packages_modules_Virtualization>.
+5. 
