@@ -111,7 +111,9 @@ function install_nix_and_home_manager {
 	until_success sudo apt upgrade -y
 }
 
-function install_tailscale {
+# This function is not currently used, but it can be used to set up Tailscale in an ephemeral mode where it does not write any logs or state to disk. This can be useful if you want to ensure that no traces of Tailscale are left on the system after a reboot, at the cost of having to re-authenticate with Tailscale on every boot.
+# Also a work-around for the fact that Tailscale does not provide a `--force` flag for the `tailscale up` command which would allow it to overwrite any existing machines that are currently present.
+function install_tailscale_ephemeral {
 	until_success sudo apt update -y
 	until_success curl -fsSL https://tailscale.com/install.sh | sh
 	cat <<EOF | sudo tee -a /etc/default/tailscaled
@@ -125,6 +127,15 @@ EOF
 	chmod +x -v ~/start-tailscale.sh
 	
 	~/start-tailscale.sh
+}
+
+function install_tailscale {
+	until_success sudo apt update -y
+	until_success curl -fsSL https://tailscale.com/install.sh | sh
+
+	sleep 4s
+
+	sudo tailscale up --auth-key="${TAILSCALE_KEY}" --accept-dns=false --hostname=droid --ssh
 }
 
 function install_openssh {
