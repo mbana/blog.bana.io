@@ -10,8 +10,4 @@ tags:
 type: blog
 ---
 
-Ever wanted to open a file as root on Linux with Visual Studio Code? Here’s the command to do so:
-
-```sh
-$ xhost +local: && sudo code --no-sandbox --user-data-dir=/root/.config/code /
-```
+Ever wanted to open a file as root on Linux with Visual Studio Code? Here’s the command to do so: `sudo mkdir -pv /root/.config/code/ && xhost +local: && sudo code --no-sandbox --user-data-dir=/root/.config/code/`

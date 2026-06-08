@@ -20,7 +20,7 @@ type: blog
 
 ## Introduction
 
-The Flajolet–Martin algorithm (PCSA) estimates how many distinct elements (cardinality) appear in a stream using very little memory by exploiting randomness in hash values and counting trailing zero bits in binary hash outputs.
+The Flajolet–Martin algorithm (PCSA) estimates how many distinct elements (cardinality) appear in a stream using very little memory by exploiting randomness in hash values and counting trailing, as in 0, 1, 2, ... 64 ... etc. zero bits in binary hash outputs.
 
 In computer science, the count-distinct problem (also known in applied mathematics as the cardinality estimation problem) is the problem of finding the number of distinct elements in a data stream with repeated elements. This is a well-known problem with numerous applications. The elements might represent IP addresses of packets passing through a router, unique visitors to a web site, elements in a large database, motifs in a DNA sequence, or elements of RFID/sensor networks.
 

@@ -1,49 +1,52 @@
 /* https://imfing.github.io/hextra/docs/advanced/customization/ */
-/* https://fontsource.org */
 
-/* @font-face {
-  font-family: 'Iosevka';
-  font-style: normal;
-  font-display: auto;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff2) format('woff2'),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff) format('woff'),
-       url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.ttf) format('truetype');
-}
+@import url('https://fonts.cdnfonts.com/css/space-grotesk');
+@import url('https://fonts.cdnfonts.com/css/fira-mono');
+@import url('https://db.onlinewebfonts.com/c/1e4cd3b720ccabd5a5de545481339e3b?family=Merriweather');
 
-.content code:not(.code-block code) {
-  font-family: "Iosevka", monospace;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Zilla Slab", sans-serif;
 }
 
 body {
-  font-family: "Merriweather Sans", sans-serif;
-  font-optical-sizing: auto;
+  /* font-family: "Merriweather Sans", sans-serif; */
+  font-family: 'Space Grotesk', sans-serif;
+  /* font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
+  font-style: normal; */
   /* Not working */
   font-feature-settings: "onum";
 }
 
 .content {
-  font-family: "Merriweather", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  /* font-family: "Merriweather", serif; */
+  /* font-family: 'Space Grotesk', sans-serif; */
+  /* font-family: 'PT Serif', 'Space Grotesk', serif;*/
+  font-family: 'Merriweather', serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* font-variation-settings:
+    "wdth" 100; */
   /* Not working */
   font-feature-settings: "onum";
 }
 
 .content code:not(.code-block code) {
   /* color: #c97c2e; */
-  font-family: "Iosevka Charon Mono", "Iosevka Charon", "Iosevka", monospace;
+  /* font-family: "Fira Mono", "Cascadia Code", "Iosevka", "Iosevka Charon Mono", "Iosevka Charon", monospace; */
+  font-family: "Fira Mono",
+    "Cascadia Code",
+    "Iosevka",
+    "Iosevka Charon Mono",
+    "Iosevka Charon", "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* .content p:first-of-type::first-letter {
@@ -55,12 +58,12 @@ body {
 @supports not ((initial-letter:2) or (-webkit-initial-letter:2)) {
   .content>p:first-of-type:first-letter {
     /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
+
     color: var(--hx-color-primary-600);
     letter-spacing: 0;
     float: left;
     margin-top: .06em;
     margin-right: 1rem;
-    /* font-family: inherit; */
     font-size: 6.5rem;
     font-weight: 700;
     line-height: .8;
@@ -73,17 +76,39 @@ body {
   }
 }
 
+.debug * {
+  /* background-color: 1px solid var(--hx-color-primary-700);; */
+  /* background: rgba(255, 0, 0, 0.1); */
+  border: 1px solid var(--hx-color-primary-600);
+  /* background-color: var(--hx-color-primary-600); */
+}
+
+/* 
+.content>p:nth-of-type(2) {
+  padding-top: 1.6rem;
+} */
+
 @supports (initial-letter:2) or (-webkit-initial-letter:2) {
   .content>p:first-of-type:first-letter {
     /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
-    color: var(--hx-color-primary-600);
-    /* letter-spacing: 0; */
+
+    /* Somewhat working. */
+    /* color: var(--hx-color-primary-600);
     -webkit-initial-letter: 3 2;
     initial-letter: 3 2;
     margin-right: 0.2rem;
-    /* border: 1px solid black; */
-    /* font-family: inherit; */
-    font-weight: 700;
+    font-weight: 700; */
+
+    color: var(--hx-color-primary-600);
+    /* initial-letter: 4 6; */
+    initial-letter: 4 1;
+    /* padding: 2.2rem 2.6rem; */
+    /* padding-top: 2.2rem; */
+    /* padding-bottom: 2.2rem; */
+    /* padding-left: 2.6rem; */
+    /* padding-right: .6rem; */
+    font-weight: 900;
+    margin-right: 1.6rem;
   }
 
   @media (max-width: 768px) {

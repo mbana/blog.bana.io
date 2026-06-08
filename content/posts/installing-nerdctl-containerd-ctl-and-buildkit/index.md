@@ -12,7 +12,11 @@ tags:
 type: blog
 ---
 
-More to come—such as using `eStargz`—but for now see below. Create a file with the contents below, then simply execute it:
+## Introduction
+
+More to come—such as using `eStargz`—but for now see below. Create a file with the contents in the following section, then simply execute it.
+
+## The Code
 
 ```bash
 # Credits to: https://www.guide2wsl.com/nerdctl/

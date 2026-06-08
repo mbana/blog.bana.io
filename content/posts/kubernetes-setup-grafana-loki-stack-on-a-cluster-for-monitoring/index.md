@@ -13,6 +13,8 @@ tags:
 type: blog
 ---
 
+## Introduction
+
 A simple guide on getting installing the grafana/lock-stack on Kubernetes.
 
 ## Installing Prerequisites

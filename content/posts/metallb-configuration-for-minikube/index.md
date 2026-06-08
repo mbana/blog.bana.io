@@ -11,7 +11,9 @@ tags:
 type: blog
 ---
 
-## Prerequisites
+## Introduction
+
+Satisfy the prerequisites by installing all the below:
 
 1. `minikube`.
 1. `kubectl`.
