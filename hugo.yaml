@@ -56,7 +56,7 @@ menu:
 params:
   # Display the last modification date
   displayUpdatedDate: true
-  dateFormat: "Monday, Jan 2, 2006"
+  dateFormat: "Monday, January 2, 2006"
   # Display the author of the last modification
   displayUpdatedAuthor: true
   blog:
@@ -67,7 +67,8 @@ params:
     displayTags: true
   archives:
     section: posts
-    dateFormat: "1st January"
+    # dateFormat: "1st January"
+    dateFormat: "January 2"
   footer:
     displayCopyright: true
     displayPoweredBy: true
