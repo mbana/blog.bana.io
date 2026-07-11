@@ -1,5 +1,5 @@
 /* https://imfing.github.io/hextra/docs/advanced/customization/ */
-/* From https://fontsource.org */
+/* https://fontsource.org */
 
 /* @font-face {
   font-family: 'Iosevka';
@@ -28,35 +28,53 @@ h4,
 h5,
 h6 {
   font-family: "Zilla Slab", sans-serif;
-  font-feature-settings: "onum";
 }
 
 body {
   /* font-family: "Merriweather Sans", sans-serif; */
   font-family: 'Space Grotesk', sans-serif;
-  /* This is working for `Space Grotesk` but not `Merriweather`. */
+  /* font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+  /* Not working */
   font-feature-settings: "onum";
 }
 
 .content {
   font-family: "Merriweather", serif;
   /* font-family: 'Space Grotesk', sans-serif; */
-  /* This is working for `Space Grotesk` but not `Merriweather`. */
+  /* font-family: 'PT Serif', 'Space Grotesk', serif;*/
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+  /* font-variation-settings:
+    "wdth" 100; */
+  /* Not working */
   font-feature-settings: "onum";
 }
 
 .content code:not(.code-block code) {
   /* color: #c97c2e; */
   /* font-family: "Fira Mono", "Cascadia Code", "Iosevka", "Iosevka Charon Mono", "Iosevka Charon", monospace; */
-  font-family: "Fira Mono", "Iosevka Charon Mono", "Iosevka Charon", "Iosevka", "Space Mono", "Cascadia Code", monospace;
+  font-family: "Fira Mono",
+    "Cascadia Code",
+    "Iosevka",
+    "Iosevka Charon Mono",
+    "Iosevka Charon", "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
 }
+
+/* .content p:first-of-type::first-letter {
+  initial-letter: 7;
+  -webkit-initial-letter: 7;
+} */
 
 /* Drop caps using CSS. */
 @supports not ((initial-letter:2) or (-webkit-initial-letter:2)) {
   .content>p:first-of-type:first-letter {
     /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
+
     color: var(--hx-color-primary-600);
     letter-spacing: 0;
     float: left;
@@ -74,14 +92,39 @@ body {
   }
 }
 
+.debug * {
+  /* background-color: 1px solid var(--hx-color-primary-700);; */
+  /* background: rgba(255, 0, 0, 0.1); */
+  border: 1px solid var(--hx-color-primary-600);
+  /* background-color: var(--hx-color-primary-600); */
+}
+
+/* 
+.content>p:nth-of-type(2) {
+  padding-top: 1.6rem;
+} */
+
 @supports (initial-letter:2) or (-webkit-initial-letter:2) {
   .content>p:first-of-type:first-letter {
     /* color: var(--color-accent-themed, var(--color-accent, currentColor)); */
-    color: var(--hx-color-primary-600);
+
+    /* Somewhat working. */
+    /* color: var(--hx-color-primary-600);
     -webkit-initial-letter: 3 2;
     initial-letter: 3 2;
     margin-right: 0.2rem;
-    font-weight: 700;
+    font-weight: 700; */
+
+    color: var(--hx-color-primary-600);
+    /* initial-letter: 4 6; */
+    initial-letter: 4 1;
+    /* padding: 2.2rem 2.6rem; */
+    /* padding-top: 2.2rem; */
+    /* padding-bottom: 2.2rem; */
+    /* padding-left: 2.6rem; */
+    /* padding-right: .6rem; */
+    font-weight: 900;
+    margin-right: 1.6rem;
   }
 
   @media (max-width: 768px) {
@@ -99,12 +142,6 @@ body {
   --primary-lightness: 55.3%;
 }
 
-/* Mainly to debug CSS if `&debug=true` or `&debug_css=true` is in the URL query string. */
-.debug * {
-  border: 1px solid var(--hx-color-primary-600);
-  /* background-color: var(--hx-color-primary-600); */
-}
-
 /*
 @layer theme {
   :root {
@@ -112,6 +149,7 @@ body {
   }
 }
 */
+
 
 /*
 // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
