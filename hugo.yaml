@@ -56,7 +56,7 @@ menu:
 params:
   # Display the last modification date
   displayUpdatedDate: true
-  dateFormat: "1st of January, 2006"
+  dateFormat: "Monday, Jan 2, 2006"
   # Display the author of the last modification
   displayUpdatedAuthor: true
   blog:
