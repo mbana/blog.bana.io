@@ -33,7 +33,7 @@ h6 {
 
 body {
   /* font-family: "Merriweather Sans", sans-serif; */
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   /* This is working for `Space Grotesk` but not `Merriweather`. */
   font-feature-settings: "onum";
 }
