@@ -1,6 +1,0 @@
-Misc Changes:
-
-* Add email footer design: `blog.bana.io/designs/email-signature/footer.html`.
-* Add a `debug_css` and `debug` query param flag parsing: `blog.bana.io/layouts/_partials/custom/head-end.html`.
-* Misc cleanup.
-* Change font to the one used by https://servo.org.
