@@ -6,7 +6,7 @@ tags:
   - Router
   - Linux
   - OpenWRT
-  - Banana Pi BPI-R4 Pro 4E
+  - Banana Pi
 type: blog
 ---
 
