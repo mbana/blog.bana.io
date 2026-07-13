@@ -1,5 +1,16 @@
 /* https://imfing.github.io/hextra/docs/advanced/customization/ */
 
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  /* font-family: "Zilla Slab", sans-serif; */
+  font-family: "Alegreya SC", serif;
+  font-feature-settings: "onum";
+}
+
 h1,
 h2,
 h3,
@@ -18,7 +29,7 @@ body {
 }
 
 .content {
-  font-family: "Vollkorn", serif;
+  font-family: "Alegreya", "Vollkorn", serif;
   font-feature-settings: "onum";
 }
 
