@@ -6,8 +6,8 @@
 .content h4,
 .content h5,
 .content h6 {
-  font-family: "Zilla Slab", sans-serif;
-  /* font-family: "Alegreya SC", serif; */
+  /* font-family: "Zilla Slab", sans-serif; */
+  font-family: "Alegreya SC", serif;
   font-feature-settings: "onum";
 }
 
@@ -28,20 +28,9 @@ body {
   font-feature-settings: "onum";
 }
 
-/* // <weight>: Use a value from 200 to 800
-// <uniquifier>: Use a unique and descriptive class name
-
-.newsreader-<uniquifier> {
-  font-family: "Newsreader", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 .content {
-  font-family: "Newsreader", "Alegreya", "Vollkorn", serif;
+  font-family: "Alegreya", "Vollkorn", serif;
   font-feature-settings: "onum";
-  font-optical-sizing: auto;
 }
 
 .content code:not(.code-block code) {
