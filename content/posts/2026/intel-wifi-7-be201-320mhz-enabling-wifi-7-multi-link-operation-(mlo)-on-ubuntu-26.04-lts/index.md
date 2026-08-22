@@ -100,8 +100,6 @@ phy#10
 
 Thanks for reading and good luck.
 
-## References/Links
-
 [^1]: <https://support.excentis.com/knowledge/article/1005>.
 [^2]: <https://support.excentis.com/knowledge/article/1004>.
 [^3]: <https://forum.level1techs.com/t/how-to-enable-wi-fi-7-multi-link-operation-mlo-on-ubuntu-or-linux-for-intel-be201>.
