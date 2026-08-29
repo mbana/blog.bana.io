@@ -9,7 +9,7 @@ tags:
 type: blog
 ---
 
-# Introduction
+## Introduction
 
 I have done this enough times that I thought I'd just write about so I can easily get that commands I need to run to `chroot` for a Fedora-style BTRFS partition layout. At present there isn't an equilevant version of `arch-chroot` (see <https://github.com/archlinux/arch-install-scripts>) for Fedora which automates all of the below.
 

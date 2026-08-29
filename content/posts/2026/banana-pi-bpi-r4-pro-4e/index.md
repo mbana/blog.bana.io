@@ -11,7 +11,7 @@ tags:
 type: blog
 ---
 
-# Introduction
+## Introduction
 
 Banana Pi make an awesome router called the Banana-Pi BPI-R4 Pro 4E, see [^1].
 
@@ -20,4 +20,3 @@ Banana Pi make an awesome router called the Banana-Pi BPI-R4 Pro 4E, see [^1].
 Getting Docker/Podman running isn't simply a matter of installing the `docker` package found in OpenWrt. No, one must re-compile the Linux kernel and patch it up.
 
 [^1]: <https://docs.banana-pi.org/en/BPI-R4_Pro/BananaPi_BPI-R4_Pro>.
-

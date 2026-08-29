@@ -33,7 +33,7 @@ Using the official speedtest cli taken from <https://www.speedtest.net/apps/cli>
 
 ```sh
 wget 'https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-aarch64.tgz'
-tar -vxzf ./ookla-speedtest-1.2.0-linux-arm64.tgz
+tar -vxzf ./ookla-speedtest-1.2.0-linux-aarch64.tgz
 ```
 
 I ran the binary **directly** on the router (therefore bypassing NAT etc.) and the results [^4] below speak for themselves:
@@ -73,8 +73,6 @@ Idle Latency:     1.29 ms   (jitter: 0.61ms, low: 0.78ms, high: 1.78ms)
 So it looks like I am hitting above average speeds, maybe because Community Fibre overprovision? Not sure ... if you work at Community Fibre, please do email me at m@bana.io if you know why I get higher than average speeds.
 
 ![image-01.png](image-01.png)
-
-## Links
 
 [^1]: [8311 Community Firmware MOD](https://github.com/djGrrr/8311-was-110-firmware-builder) by [djGrrr](https://github.com/djGrrr).
 [^2]: [8311 Community Discord Server](https://discord.com/servers/8311-886329492438671420).

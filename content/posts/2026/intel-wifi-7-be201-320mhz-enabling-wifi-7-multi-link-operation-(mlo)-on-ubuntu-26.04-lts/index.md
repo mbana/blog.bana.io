@@ -11,7 +11,7 @@ tags:
 type: blog
 ---
 
-# Introduction
+## Introduction
 
 I thought this should work out of the box on Linux since it works out of the box on Windows 11, but it doesn't. One needs to compile and use `wpa_supplicant@v2.12`, otherwise it will fail to connect to to the MLO-enabled SSID/access point.
 
@@ -28,7 +28,7 @@ You can see the forum posts I made on certain good forums at [^3] [^4].
 Obtain all the dependencies:
 
 ```sh
-sudo apt install libnl-3-200 libnl-3-200 libdbus-1-3 libdbus-1-dev libnl-genl-3-dev libssl-dev openssl build-essential pkg-config libnl-3-dev libnl-genl-3-dev libdbus-1-dev libssl-dev libreadline-dev libpcsclite-dev git build-essential pkg-config libnl-3-dev libnl-genl-3-dev libdbus-1-dev libssl-dev libreadline-dev libpcsclite-dev git
+sudo apt install libnl-3-200 libnl-3-200 libdbus-1-3 libdbus-1-dev libnl-genl-3-dev libssl-dev openssl build-essential pkg-config libnl-3-dev libnl-genl-3-dev libdbus-1-dev libssl-dev libreadline-dev libpcsclite-dev git build-essential pkg-config libnl-3-dev libnl-genl-3-dev libdbus-1-dev libssl-dev libreadline-dev libpcsclite-dev git libnl-route-3-dev
 ```
 
 Begin building it:
