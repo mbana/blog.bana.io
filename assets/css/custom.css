@@ -42,7 +42,8 @@ body {
   font-family: "Alegreya", "Newsreader", "Vollkorn", serif;
   font-feature-settings: "onum";
   font-optical-sizing: auto;
-  font-size: 1.116em;
+  /* font-size: 1.108em; */
+  font-size: 1.08em;
 }
 
 .content code:not(.code-block code) {
