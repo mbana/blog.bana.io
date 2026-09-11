@@ -7,7 +7,7 @@
 .content h5,
 .content h6 {
   font-family: "Zilla Slab", sans-serif;
-  /* font-family: "Alegreya SC", serif; */
+  font-family: "Alegreya SC", serif;
   font-feature-settings: "onum";
 }
 
@@ -39,9 +39,10 @@ body {
 } */
 
 .content {
-  font-family: "Newsreader", "Alegreya", "Vollkorn", serif;
+  font-family: "Alegreya", "Newsreader", "Vollkorn", serif;
   font-feature-settings: "onum";
   font-optical-sizing: auto;
+  font-size: 1.164em;
 }
 
 .content code:not(.code-block code) {

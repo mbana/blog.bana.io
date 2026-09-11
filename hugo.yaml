@@ -62,7 +62,7 @@ params:
   blog:
     list:
       displayTags: false
-      pagerSize: 64
+      pagerSize: 128
   toc:
     displayTags: true
   archives:
@@ -83,9 +83,9 @@ params:
       link: /
       width: 64
       height: 64
-  # page:
+  page:
   #   # full (100%), wide (90rem), normal (1280px)
-  #   width: normal
+    width: wide
   theme:
     # light | dark | system
     default: system
